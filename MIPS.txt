@@ -1,0 +1,12 @@
+lw $t0, 0($gp)
+slti $t1, $t0, 3
+sll $t0, $t0, 2
+add $t2, $t0, $gp
+lw $t2, 1064($t2)
+jr $t2
+sw $zero, 28($gp)
+addi $t0, $zero, 1
+sw $t0, 32($gp)
+addi $t0, $zero, -1
+sw $t0, 28($gp)
+
